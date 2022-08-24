@@ -1,0 +1,65 @@
+.contact {
+  position: relative;
+  .contact-img-cover {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .contact-content {
+    .contact-container {
+      @include styleCardReset($color-4);
+
+      .card-header {
+        @include styleCardReset($color-4);
+        padding-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        h4 {
+          width: 100%;
+          display: inline-block;
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+      }
+      .card-body {
+        @include styleCardReset($color-4);
+        span {
+          background-color: transparent;
+        }
+        .contact-input {
+          margin-bottom: 20px;
+          input {
+            @include inputStyle;
+          }
+        }
+        .select-nation {
+          margin-bottom: 20px;
+          select {
+            @include inputStyle;
+          }
+        }
+        .contact-textarea {
+          margin-bottom: 20px;
+          textarea {
+            border-left: none;
+            width: 100%;
+            padding: 1em 1em 1em 3.5em !important;
+            height: 90px;
+            line-height: 1.5;
+            font-size: 0.8em !important;
+          }
+        }
+      }
+      .card-footer {
+        @include styleCardReset($color-4);
+      }
+    }
+  }
+}

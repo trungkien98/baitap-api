@@ -1,0 +1,45 @@
+.carousel {
+  position: relative;
+  .carousel-imgtop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    img {
+      width: 80%;
+      height: auto;
+      display: block;
+    }
+  }
+  .carousel-imgbot {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+  .carousel-content {
+    z-index: 3;
+    position: relative;
+    padding-bottom: 4em;
+    padding-top: 4em;
+    h1 {
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        color: $color-1;
+        font-weight: 600;
+      }
+      span {
+        font-size: 3.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+}

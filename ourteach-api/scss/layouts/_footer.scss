@@ -1,0 +1,92 @@
+footer {
+  background-image: url(./../../images/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 8em;
+  padding-top: 8em;
+  overflow: auto;
+  color: $color-4;
+  a {
+    color: $color-4;
+  }
+  .footer-contact {
+    .footer-contact-title {
+      margin-bottom: 1em;
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+    .footer-contact-item-list {
+      text-align: left;
+      font-size: 0.9em;
+      .footer-item {
+        margin-bottom: 1em;
+        i {
+          padding-right: 10px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .footer-contact-social {
+      a {
+        transition: 0.3s;
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+  .footer-links {
+    .footer-links-title {
+      margin-bottom: 1em;
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+    .footer-links-title {
+      margin-bottom: 1em;
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+    ul {
+      padding: 0;
+      li {
+        padding-bottom: 5px;
+        a {
+          font-size: 0.9em;
+          border-bottom: 1px solid rgba($color: black, $alpha: 0.1);
+          &:hover {
+            color: rgba(161, 111, 145, 0.95);
+          }
+        }
+      }
+    }
+  }
+  .footer-letter {
+    .footer-about-title {
+      margin-bottom: 1.3em;
+      font-size: 1.55rem;
+      font-weight: 700;
+    }
+    .contact-input {
+      padding-bottom: 5px;
+      input {
+        width: 100%;
+        height: 3.2em;
+        padding: 0 30%;
+        border-radius: 30px;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        &:focus {
+          border: 1px solid rgba(255, 255, 255, 1);
+        }
+      }
+    }
+    button {
+      width: 100%;
+      color: black;
+      background-color: white;
+    }
+  }
+}

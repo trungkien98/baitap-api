@@ -1,0 +1,332 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* ul {
+  list-style: none;
+}
+* a {
+  text-decoration: none;
+  color: black;
+}
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.btnStyle1 {
+  background-color: #b61984;
+  padding: 15px 20px;
+  border: 1px;
+  border-radius: 40px;
+  letter-spacing: none;
+  line-height: 1;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+header {
+  color: #181818;
+  background-color: transparent;
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+}
+header .logo img {
+  width: 80px;
+}
+header .nav-cus {
+  background-color: transparent !important;
+}
+header .nav-cus a {
+  color: #181818;
+  font-weight: 600;
+  font-size: 13px;
+}
+header .nav-cus li {
+  margin: 0 20px;
+}
+header .topMenu a {
+  color: #181818;
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+.carousel {
+  position: relative;
+}
+.carousel .carousel-imgtop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.carousel .carousel-imgtop img {
+  width: 80%;
+  height: auto;
+  display: block;
+}
+.carousel .carousel-imgbot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.carousel .carousel-imgbot img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.carousel .carousel-content {
+  z-index: 3;
+  position: relative;
+  padding-bottom: 4em;
+  padding-top: 4em;
+}
+.carousel .carousel-content h1 p {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #b61984;
+  font-weight: 600;
+}
+.carousel .carousel-content h1 span {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.about {
+  position: relative;
+  background-color: #dcd1f3;
+  font-family: "Montserrat", sans-serif;
+}
+.about .about-content .row {
+  background-color: #dcd1f3;
+  z-index: 10;
+  margin-bottom: 15px;
+}
+.about .about-content .row .about-item-container {
+  z-index: 3;
+}
+.about .about-content .row .about-item-container .about-item {
+  background-color: white;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+.about .about-content .row .about-item-container .about-item:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.6);
+}
+.about .about-content .row .about-item-container .about-item .about-item-img {
+  margin-bottom: 20px;
+}
+.about .about-content .row .about-item-container .about-item .about-item-text {
+  text-align: center;
+}
+.about .about-content .row .about-item-container .about-item .about-item-text i {
+  font-size: 0.75rem;
+  margin-bottom: 0.7em;
+  color: #b61984;
+  font-weight: 600;
+}
+.about .about-content .row .about-item-container .about-item .about-item-text h3 {
+  padding-bottom: 10px;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+.about .about-content .row .about-item-container .about-item .about-item-text p {
+  padding-bottom: 20px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+.about .about-content img {
+  width: 100%;
+  background-size: cover;
+}
+.about .about-cover-img {
+  position: absolute;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  bottom: 0;
+}
+.about .about-cover-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact {
+  position: relative;
+}
+.contact .contact-img-cover {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.contact .contact-img-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.contact .contact-content .contact-container {
+  border: 0;
+  background-color: white;
+}
+.contact .contact-content .contact-container .card-header {
+  border: 0;
+  background-color: white;
+  padding-bottom: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact .contact-content .contact-container .card-header h4 {
+  width: 100%;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.contact .contact-content .contact-container .card-body {
+  border: 0;
+  background-color: white;
+}
+.contact .contact-content .contact-container .card-body span {
+  background-color: transparent;
+}
+.contact .contact-content .contact-container .card-body .contact-input {
+  margin-bottom: 20px;
+}
+.contact .contact-content .contact-container .card-body .contact-input input {
+  border-left: none;
+}
+.contact .contact-content .contact-container .card-body .contact-input input:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+.contact .contact-content .contact-container .card-body .select-nation {
+  margin-bottom: 20px;
+}
+.contact .contact-content .contact-container .card-body .select-nation select {
+  border-left: none;
+}
+.contact .contact-content .contact-container .card-body .select-nation select:focus {
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: none;
+}
+.contact .contact-content .contact-container .card-body .contact-textarea {
+  margin-bottom: 20px;
+}
+.contact .contact-content .contact-container .card-body .contact-textarea textarea {
+  border-left: none;
+  width: 100%;
+  padding: 1em 1em 1em 3.5em !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+}
+.contact .contact-content .contact-container .card-footer {
+  border: 0;
+  background-color: white;
+}
+
+footer {
+  background-image: url(./../../images/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 8em;
+  padding-top: 8em;
+  overflow: auto;
+  color: white;
+}
+footer a {
+  color: white;
+}
+footer .footer-contact .footer-contact-title {
+  margin-bottom: 1em;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+footer .footer-contact .footer-contact-item-list {
+  text-align: left;
+  font-size: 0.9em;
+}
+footer .footer-contact .footer-contact-item-list .footer-item {
+  margin-bottom: 1em;
+}
+footer .footer-contact .footer-contact-item-list .footer-item i {
+  padding-right: 10px;
+}
+footer .footer-contact .footer-contact-item-list .footer-item p {
+  margin: 0;
+}
+footer .footer-contact .footer-contact-social a {
+  transition: 0.3s;
+}
+footer .footer-contact .footer-contact-social a:hover {
+  color: black;
+}
+footer .footer-links .footer-links-title {
+  margin-bottom: 1em;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+footer .footer-links .footer-links-title {
+  margin-bottom: 1em;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+footer .footer-links ul {
+  padding: 0;
+}
+footer .footer-links ul li {
+  padding-bottom: 5px;
+}
+footer .footer-links ul li a {
+  font-size: 0.9em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+footer .footer-links ul li a:hover {
+  color: rgba(161, 111, 145, 0.95);
+}
+footer .footer-letter .footer-about-title {
+  margin-bottom: 1.3em;
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+footer .footer-letter .contact-input {
+  padding-bottom: 5px;
+}
+footer .footer-letter .contact-input input {
+  width: 100%;
+  height: 3.2em;
+  padding: 0 30%;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+footer .footer-letter .contact-input input:focus {
+  border: 1px solid rgb(255, 255, 255);
+}
+footer .footer-letter button {
+  width: 100%;
+  color: black;
+  background-color: white;
+}/*# sourceMappingURL=main.css.map */

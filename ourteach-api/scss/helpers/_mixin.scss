@@ -1,0 +1,17 @@
+@mixin styleBtn1($bg, $pd-x, $pd-y, $bd, $radius, $ls) {
+  background-color: $bg;
+  padding: $pd-x $pd-y;
+  border: $bd;
+  border-radius: $radius;
+  letter-spacing: $ls;
+}
+@mixin styleText($fs, $fw, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  color: $color;
+}
+
+@mixin styleCardReset($color) {
+  border: 0;
+  background-color: $color;
+}

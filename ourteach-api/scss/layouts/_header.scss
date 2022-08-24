@@ -1,0 +1,38 @@
+.fix-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+header {
+  color: #181818;
+  background-color: transparent;
+  opacity: 1;
+  font-family: "Montserrat", sans-serif;
+
+  .logo {
+    img {
+      width: 80px;
+    }
+  }
+  .nav-cus {
+    background-color: transparent !important;
+    a {
+      color: #181818;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    li {
+      margin: 0 20px;
+    }
+  }
+  .topMenu {
+    a {
+      color: $color-2;
+      text-decoration: none;
+      margin-left: $bd-3;
+      font-size: $padding-3;
+    }
+  }
+}

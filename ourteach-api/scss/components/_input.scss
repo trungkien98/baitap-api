@@ -1,0 +1,8 @@
+@mixin inputStyle {
+  border-left: none;
+  &:focus {
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: none;
+  }
+}

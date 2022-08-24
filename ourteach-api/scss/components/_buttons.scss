@@ -1,0 +1,6 @@
+.btnStyle1 {
+  @include styleBtn1($color-1, $padding-3, $padding-4, $bd-1, $bd-4, none);
+  line-height: 1;
+  color: white;
+  font-size: 0.9rem;
+}
